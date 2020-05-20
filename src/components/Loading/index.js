@@ -1,11 +1,7 @@
 import React from 'react';
 import { Image, StyleSheet } from 'react-native';
 
-export default function Loading({ isLoading, style }) {
-  if (!isLoading) {
-    return null;
-  }
-
+export default function Loading({ style }) {
   return (
     <Image
       style={[styles.container, style]}
