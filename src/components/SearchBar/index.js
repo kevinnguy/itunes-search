@@ -7,8 +7,11 @@ export default function SearchBar({ style, onChangeText }) {
   return (
     <View style={[styles.container, style]}>
       <TextInput
+        autoFocus
         style={styles.textInput}
         onChangeText={onChangeText}
+        numberOfLines={1}
+        autoCorrect={false}
         placeholder={'Search artists, songs, albums'}
       />
       <Loading style={styles.loading} isLoading={false} />
