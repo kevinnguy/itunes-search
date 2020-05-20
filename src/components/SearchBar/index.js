@@ -1,9 +1,15 @@
 import React from 'react';
-import { StyleSheet, TextInput, View } from 'react-native';
+import {
+  TouchableOpacity,
+  StyleSheet,
+  TextInput,
+  Text,
+  View,
+} from 'react-native';
 
 import Loading from '../Loading/index.js';
 
-export default function SearchBar({ style, onChangeText }) {
+export default function SearchBar({ isLoading, style, onChangeText, onPress }) {
   return (
     <View style={[styles.container, style]}>
       <TextInput
@@ -14,7 +20,13 @@ export default function SearchBar({ style, onChangeText }) {
         autoCorrect={false}
         placeholder={'Search artists, songs, albums'}
       />
-      <Loading style={styles.loading} isLoading={false} />
+      {isLoading ? (
+        <Loading style={styles.loading} />
+      ) : (
+        <TouchableOpacity style={styles.searchButton} onPress={onPress}>
+          <Text style={styles.searchButtonText}>{'Search'}</Text>
+        </TouchableOpacity>
+      )}
     </View>
   );
 }
@@ -30,9 +42,19 @@ const styles = StyleSheet.create({
   },
   textInput: {
     flex: 1,
-    fontSize: 24,
+    fontSize: 20,
   },
   loading: {
     marginLeft: 10,
+  },
+  searchButton: {
+    borderColor: 'purple',
+    backgroundColor: 'purple',
+    borderRadius: 10,
+    borderWidth: StyleSheet.hairlineWidth,
+    padding: 10,
+  },
+  searchButtonText: {
+    color: 'white',
   },
 });
