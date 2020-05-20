@@ -1,26 +1,35 @@
 import React from 'react';
 import { StyleSheet, TextInput, View } from 'react-native';
 
-import Loading from '../Loading.js';
+import Loading from '../Loading/index.js';
 
-export default function SearchBar({ style }) {
+export default function SearchBar({ style, onChangeText }) {
   return (
     <View style={[styles.container, style]}>
-      <TextInput style={styles.textInput} />
-      <Loading style={styles.loading} isLoading />
+      <TextInput
+        style={styles.textInput}
+        onChangeText={onChangeText}
+        placeholder={'Search artists, songs, albums'}
+      />
+      <Loading style={styles.loading} isLoading={false} />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     flexDirection: 'row',
+    height: 60,
+    alignItems: 'center',
+    paddingHorizontal: 20,
+    borderBottomColor: '#888',
+    borderBottomWidth: StyleSheet.hairlineWidth,
   },
   textInput: {
     flex: 1,
+    fontSize: 24,
   },
   loading: {
-    marginHorizontal: 10,
+    marginLeft: 10,
   },
 });
