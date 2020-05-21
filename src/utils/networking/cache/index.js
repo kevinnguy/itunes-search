@@ -7,11 +7,13 @@ export const createCache = size => ({
 
 const isCacheFull = cache => cache.data.length >= cache[CACHE_SIZE];
 
-const popCache = cache => cache.data.slice(1);
+const popCache = cache => {
+  return cache.data.slice(1);
+};
 
 export const addSearchResultsToCache = (searchQuery, results, cache) => {
   if (isCacheFull(cache)) {
-    popCache(cache);
+    cache.data = popCache(cache);
   }
 
   cache.data.push({
