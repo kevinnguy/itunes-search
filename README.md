@@ -1,5 +1,13 @@
 # iTunes Search
 
+## Instructions
+1. Clone this repo
+2. Install the node modules with npm: `npm i`
+3. Run the app in iOS simulator: `npm run ios`
+4. Run jest tests: `npm test`
+
+## Screenshots
+
 
 ## Requirements
 Using the following API documentation:
