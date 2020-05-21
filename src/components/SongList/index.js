@@ -7,12 +7,10 @@ import SongRow from '../SongRow';
 export default class SongList extends Component {
   keyExtractor = item => `${item.trackId}`;
 
-  onPress = item => this.props.onPress(item);
-
   renderSeparator = () => <Separator />;
 
   renderItem = ({ item }) => (
-    <TouchableOpacity onPress={this.onPress}>
+    <TouchableOpacity onPress={() => this.props.onPress(item)}>
       <SongRow data={item} />
     </TouchableOpacity>
   );
