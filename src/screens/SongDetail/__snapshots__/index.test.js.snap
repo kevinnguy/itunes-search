@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "purple",
+          "borderColor": "purple",
+          "borderRadius": 10,
+          "borderWidth": 0.5,
+          "margin": 10,
+          "opacity": 1,
+          "padding": 10,
+          "width": 120,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        Back to search
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+            "height": 120,
+            "padding": 10,
+          },
+          Object {
+            "flexDirection": "column",
+          },
+        ]
+      }
+    >
+      <Image
+        source={
+          Object {
+            "uri": "https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/24/46/97/24469731-f56f-29f6-67bd-53438f59ebcb/source/100x100bb.jpg",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "marginRight": 10,
+              "width": 100,
+            },
+            Object {
+              "height": 200,
+              "marginBottom": 10,
+              "width": 200,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "justifyContent": "space-between",
+            },
+            false,
+          ]
+        }
+      >
+        <Text
+          numberOfLines={1}
+          style={
+            Object {
+              "fontSize": 18,
+            }
+          }
+        >
+          Track: Better Together
+        </Text>
+        <Text
+          numberOfLines={1}
+          style={
+            Object {
+              "fontSize": 18,
+            }
+          }
+        >
+          Artist: Jack Johnson
+        </Text>
+        <Text
+          numberOfLines={2}
+          style={
+            Object {
+              "fontSize": 18,
+            }
+          }
+        >
+          Album: In Between Dreams (Bonus Track Version)
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "marginTop": 20,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "fontSize": 18,
+            }
+          }
+        >
+          $1.29
+        </Text>
+        <Text
+          style={
+            Object {
+              "fontSize": 18,
+            }
+          }
+        >
+          Buy the album for $11.99
+        </Text>
+        <Text
+          style={
+            Object {
+              "fontSize": 18,
+            }
+          }
+        >
+          Genre: Rock
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;
