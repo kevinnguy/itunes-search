@@ -2,12 +2,16 @@ import {
   createCache,
   addSearchResultsToCache,
   getSearchResultsFromCache,
-} from './cache';
+} from '../cache';
 
 const cache = createCache(10);
 
 export const fetchSongResults = async term => {
-  const searchQuery = encodeURI(term);
+  if (!term?.length) {
+    return null;
+  }
+
+  const searchQuery = encodeURI(term.toLowerCase());
 
   const cachedResults = getSearchResultsFromCache(searchQuery, cache);
   if (cachedResults) {
