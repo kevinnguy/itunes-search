@@ -20,5 +20,7 @@ export const addSearchResultsToCache = (searchQuery, results, cache) => {
   });
 };
 
-export const getSearchResultsFromCache = (searchQuery, cache) =>
-  cache.data.find(obj => obj.searchQuery === searchQuery);
+export const getSearchResultsFromCache = (searchQuery, cache) => {
+  const data = cache.data.find(obj => obj.searchQuery === searchQuery);
+  return data?.results;
+};
