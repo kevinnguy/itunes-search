@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<Image
+  source={
+    Object {
+      "uri": "https://www.pngitem.com/pimgs/m/235-2350144_load-map-bar-ios-5s-iphone-progress-clipart.png",
+    }
+  }
+  style={
+    Array [
+      Object {
+        "height": 40,
+        "width": 40,
+      },
+      undefined,
+    ]
+  }
+/>
+`;

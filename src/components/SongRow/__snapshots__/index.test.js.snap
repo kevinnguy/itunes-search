@@ -1,0 +1,184 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with data 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+        "height": 120,
+        "padding": 10,
+      },
+      undefined,
+    ]
+  }
+>
+  <Image
+    source={
+      Object {
+        "uri": "https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/24/46/97/24469731-f56f-29f6-67bd-53438f59ebcb/source/100x100bb.jpg",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "marginRight": 10,
+          "width": 100,
+        },
+        undefined,
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "justifyContent": "space-between",
+        },
+        Object {
+          "flex": 1,
+        },
+      ]
+    }
+  >
+    <Text
+      numberOfLines={1}
+      style={
+        Object {
+          "fontSize": 18,
+        }
+      }
+    >
+      Better Together
+    </Text>
+    <Text
+      numberOfLines={1}
+      style={
+        Object {
+          "fontSize": 18,
+        }
+      }
+    >
+      Jack Johnson
+    </Text>
+    <Text
+      numberOfLines={2}
+      style={
+        Object {
+          "fontSize": 18,
+        }
+      }
+    >
+      In Between Dreams (Bonus Track Version)
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`renders more details 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+        "height": 120,
+        "padding": 10,
+      },
+      undefined,
+    ]
+  }
+>
+  <Image
+    source={
+      Object {
+        "uri": "https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/24/46/97/24469731-f56f-29f6-67bd-53438f59ebcb/source/100x100bb.jpg",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "marginRight": 10,
+          "width": 100,
+        },
+        undefined,
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "justifyContent": "space-between",
+        },
+        false,
+      ]
+    }
+  >
+    <Text
+      numberOfLines={1}
+      style={
+        Object {
+          "fontSize": 18,
+        }
+      }
+    >
+      Track: Better Together
+    </Text>
+    <Text
+      numberOfLines={1}
+      style={
+        Object {
+          "fontSize": 18,
+        }
+      }
+    >
+      Artist: Jack Johnson
+    </Text>
+    <Text
+      numberOfLines={2}
+      style={
+        Object {
+          "fontSize": 18,
+        }
+      }
+    >
+      Album: In Between Dreams (Bonus Track Version)
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "marginTop": 20,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 18,
+        }
+      }
+    >
+      $1.29
+    </Text>
+    <Text
+      style={
+        Object {
+          "fontSize": 18,
+        }
+      }
+    >
+      Buy the album for $11.99
+    </Text>
+    <Text
+      style={
+        Object {
+          "fontSize": 18,
+        }
+      }
+    >
+      Genre: Rock
+    </Text>
+  </View>
+</View>
+`;

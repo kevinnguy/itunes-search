@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "borderBottomColor": "#888",
+        "borderBottomWidth": 0.5,
+        "flexDirection": "row",
+        "height": 60,
+        "paddingHorizontal": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    autoCorrect={false}
+    autoFocus={true}
+    numberOfLines={1}
+    placeholder="Search artists, songs, albums"
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "flex": 1,
+        "fontSize": 20,
+      }
+    }
+    underlineColorAndroid="transparent"
+  />
+  <View
+    accessible={true}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "purple",
+        "borderColor": "purple",
+        "borderRadius": 10,
+        "borderWidth": 0.5,
+        "opacity": 1,
+        "padding": 10,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "white",
+        }
+      }
+    >
+      Search
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`renders correctly when loading 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "borderBottomColor": "#888",
+        "borderBottomWidth": 0.5,
+        "flexDirection": "row",
+        "height": 60,
+        "paddingHorizontal": 20,
+      },
+      undefined,
+    ]
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    autoCorrect={false}
+    autoFocus={true}
+    numberOfLines={1}
+    placeholder="Search artists, songs, albums"
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "flex": 1,
+        "fontSize": 20,
+      }
+    }
+    underlineColorAndroid="transparent"
+  />
+  <Image
+    source={
+      Object {
+        "uri": "https://www.pngitem.com/pimgs/m/235-2350144_load-map-bar-ios-5s-iphone-progress-clipart.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "height": 40,
+          "width": 40,
+        },
+        Object {
+          "marginLeft": 10,
+        },
+      ]
+    }
+  />
+</View>
+`;
