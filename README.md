@@ -39,3 +39,24 @@ Special Notes
 ·      Writing UI and Unit tests is a must. The more coverage the better.
 ·      Roll your own networking and view architecture, take some time to think of and attempt to handle edge cases with networking.
 ·      Cache the results
+
+
+
+- Adding navigation, user should be able to come back to the list from the song detail screen.
+  - react-navigation v5 API changes 
+
+- Adding error handling, show error and retry button on screen when network call fails.
+  - UI implementation
+
+- Adding the keyboard handling, when pressing return key, the search should start.
+  - 
+
+- Adding pagination functionality on search API.
+
+
+- Adding favorites/ Favorites screen in another tab or something.
+  - setting state
+
+- Adding lookup API.
+  - https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/LookupExamples.html#//apple_ref/doc/uid/TP40017632-CH7-SW1
+  - https://itunes.apple.com/lookup?id=909253

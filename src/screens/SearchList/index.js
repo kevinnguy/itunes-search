@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { Alert, StyleSheet, View } from 'react-native';
 
 import SearchBar from '../../components/SearchBar';
 import SongList from '../../components/SongList';
@@ -24,12 +24,20 @@ export default class SearchList extends Component {
     }
 
     this.setState({ isLoading: true });
-    const results = await fetchSongResults(searchQuery);
-    this.setState({ data: results, isLoading: false });
+
+    try {
+      const results = await fetchSongResults(searchQuery);
+      this.setState({ data: results, isLoading: false });
+    } catch (error) {
+      Alert.alert('Error', error.message, [
+        { text: 'Retry', onPress: () => this.onPressSearch() },
+      ]);
+    }
   };
 
   onPressRow = songData => {
-    this.props.onPressSong(songData);
+    // this.props.onPressSong(songData);
+    this.props.navigation.navigate('SONG_DETAIL', { data: songData });
   };
 
   render() {
@@ -37,6 +45,7 @@ export default class SearchList extends Component {
     return (
       <View style={styles.container}>
         <SearchBar
+          onSubmit={this.onPressSearch}
           onChangeText={this.onChangeText}
           isLoading={isLoading}
           onPress={this.onPressSearch}

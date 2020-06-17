@@ -9,13 +9,20 @@ import {
 
 import Loading from '../Loading/index.js';
 
-export default function SearchBar({ isLoading, style, onChangeText, onPress }) {
+export default function SearchBar({
+  isLoading,
+  style,
+  onChangeText,
+  onSubmit,
+  onPress,
+}) {
   return (
     <View style={[styles.container, style]}>
       <TextInput
         autoFocus
         style={styles.textInput}
         onChangeText={onChangeText}
+        onSubmitEditing={onSubmit}
         numberOfLines={1}
         autoCorrect={false}
         placeholder={'Search artists, songs, albums'}

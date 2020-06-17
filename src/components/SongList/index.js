@@ -44,7 +44,8 @@ export default class SongList extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    // flex: 1,
+    height: 200,
   },
   emptyState: {
     marginTop: 50,

@@ -9,7 +9,9 @@ import {
 
 import SongRow from '../../components/SongRow';
 
-export default function SongDetail({ data, onPressBack }) {
+export default function SongDetail({ navigation, onPressBack }) {
+  const data = navigation.getParam('data', {});
+
   return (
     <ScrollView style={styles.container}>
       <TouchableOpacity style={styles.backButton} onPress={onPressBack}>

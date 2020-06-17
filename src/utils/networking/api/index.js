@@ -8,7 +8,7 @@ const cache = createCache(10);
 
 export const fetchSongResults = async term => {
   if (!term?.length) {
-    return null;
+    throw new Error('Term is null');
   }
 
   const searchQuery = encodeURI(term.toLowerCase());
@@ -25,7 +25,8 @@ export const fetchSongResults = async term => {
     const { results } = await response.json();
     addSearchResultsToCache(searchQuery, results, cache);
     return results;
+    // throw new Error('oh no');
   } catch (error) {
-    return new Error('Something went wrong, please try again');
+    throw new Error('Something went wrong, please try again');
   }
 };
